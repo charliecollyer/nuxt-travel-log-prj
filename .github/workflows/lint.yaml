@@ -1,4 +1,4 @@
-name: Lint Tests
+name: Lint Test
 
 on:
   pull_request:
@@ -15,6 +15,6 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
-      - run: npm i
+          node-version: 22.x
+      - run: npm install
       - run: npm run lint
